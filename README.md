@@ -79,6 +79,6 @@ http://localhost:3000
 
 **Members:** Dhanvantry S, Bhavani D, Aaysha Asmitha H, Anushya E
 
-**SoI Mentor:** Gowthaman S M
+**SoI Mentor:** Gowthaman S
 
 SkillSwap Hub envisions a global learning network where skills are currency — connecting communities through shared knowledge, collaboration, and mutual growth.
