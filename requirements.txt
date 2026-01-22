@@ -1,0 +1,22 @@
+# Skill Swap Hub - Backend Dependencies
+# Install with: npm install
+
+# Core Dependencies (see package.json for npm packages)
+# Node.js Runtime: v14+
+
+# Main Libraries
+# express@^4.18.2 - Web framework
+# prisma@^6.0.0 - ORM for database
+# @prisma/client@^6.0.0 - Prisma client
+# jsonwebtoken@^9.0.0 - JWT authentication
+# bcryptjs@^2.4.3 - Password hashing
+# axios@^1.4.0 - HTTP client
+# cors@^2.8.5 - CORS middleware
+# dotenv@^16.0.3 - Environment variables
+# nodemailer@^6.9.3 - Email service
+
+# Development Dependencies
+# nodemon@^2.0.22 - Auto-reload server
+# vite@^4.3.9 - Build tool (frontend)
+
+# See package.json for complete dependency list and versions

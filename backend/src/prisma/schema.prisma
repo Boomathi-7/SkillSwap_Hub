@@ -1,0 +1,42 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int      @id @default(autoincrement())
+  name          String
+  qualification String
+  email         String   @unique
+  mobile        String
+  password      String
+  skillsHave    String[]
+  skillsNeed    String[]
+  invites       Invite[]
+  notifications Notification[]
+}
+
+model Invite {
+  id         Int     @id @default(autoincrement())
+  receiverId Int
+  receiver   User    @relation(fields: [receiverId], references: [id], onDelete: Cascade)
+  senderId   Int
+  status     String  @default("PENDING")
+  senderName String
+  senderEmail String
+  senderSkills String[]
+  createdAt  DateTime @default(now())
+}
+
+model Notification {
+  id        Int     @id @default(autoincrement())
+  userId    Int
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  message   String
+  createdAt DateTime @default(now())
+}
